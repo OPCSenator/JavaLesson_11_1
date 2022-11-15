@@ -1,6 +1,6 @@
 public class PostersManager {
 
-    MyPosters[] myArrayPosters = new MyPosters[0];
+    private MyPosters[] myArrayPosters = new MyPosters[0];
     private int countOut = 10;
 
 
@@ -8,7 +8,7 @@ public class PostersManager {
     }
 
     public PostersManager(int myCount) {
-        if ((myCount > 0) & (myCount < 1000)) {
+        if (myCount > 0) {
             this.countOut = myCount;
         }
     }
