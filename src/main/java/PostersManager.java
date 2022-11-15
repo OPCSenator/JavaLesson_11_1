@@ -16,22 +16,26 @@ public class PostersManager {
     public void addMovie(MyPosters item) {
         MyPosters[] temp = new MyPosters[myArrayPosters.length + 1];
         System.arraycopy(myArrayPosters, 0, temp, 0, myArrayPosters.length);
-        temp[temp.length-1] = item;
+        temp[temp.length - 1] = item;
         myArrayPosters = temp;
     }
 
-    public MyPosters[] findAll(){
+    public MyPosters[] findAll() {
         return myArrayPosters;
 
     }
 
-    public MyPosters[] findLast(){
+    public MyPosters[] findLast() {
 
         int myCountOut = 0;
-        if (myArrayPosters.length < countOut) {myCountOut = myArrayPosters.length;} else {myCountOut = countOut;}
+        if (myArrayPosters.length < countOut) {
+            myCountOut = myArrayPosters.length;
+        } else {
+            myCountOut = countOut;
+        }
         MyPosters[] temp = new MyPosters[myCountOut];
-        for (int i = 0; i < myCountOut; i++){
-            temp[i] = myArrayPosters[myArrayPosters.length -1 -i];
+        for (int i = 0; i < myCountOut; i++) {
+            temp[i] = myArrayPosters[myArrayPosters.length - 1 - i];
         }
         return temp;
     }

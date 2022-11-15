@@ -11,7 +11,7 @@ public class PosterManagerTest {
     MyPosters poster6 = new MyPosters("PosterLink6", "MovieName6", "Adventure", false);
 
     @Test
-    public void addPosterTest(){
+    public void addPosterTest() {
 
         PostersManager myPoster = new PostersManager();
         myPoster.addMovie(poster1);
@@ -23,7 +23,7 @@ public class PosterManagerTest {
     }
 
     @Test
-    public void findLastTest(){
+    public void findLastTest() {
 
         PostersManager myPoster = new PostersManager(2);
         myPoster.addMovie(poster1);
@@ -35,7 +35,7 @@ public class PosterManagerTest {
     }
 
     @Test
-    public void findLastMoreThanLimitTest(){
+    public void findLastMoreThanLimitTest() {
 
         PostersManager myPoster = new PostersManager(5);
         myPoster.addMovie(poster1);
@@ -50,7 +50,7 @@ public class PosterManagerTest {
     }
 
     @Test
-    public void findLastLessThanLimitTest(){
+    public void findLastLessThanLimitTest() {
 
         PostersManager myPoster = new PostersManager(5);
         myPoster.addMovie(poster1);
@@ -63,7 +63,7 @@ public class PosterManagerTest {
     }
 
     @Test
-    public void findLastEqualLimitTest(){
+    public void findLastEqualLimitTest() {
 
         PostersManager myPoster = new PostersManager(5);
         myPoster.addMovie(poster1);
@@ -77,7 +77,7 @@ public class PosterManagerTest {
     }
 
     @Test
-    public void findLastNegativeCountTest(){
+    public void findLastNegativeCountTest() {
 
         PostersManager myPoster = new PostersManager(-5);
         myPoster.addMovie(poster1);
